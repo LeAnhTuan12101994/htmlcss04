@@ -293,12 +293,17 @@ button {
 
 /* about */
 .about {
-  margin-top: 207px;
+  margin-top: 138px;
 }
 
 .about__inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.about__media {
+  position: relative;
 }
 
 .about__label {
@@ -354,4 +359,68 @@ button {
   position: absolute;
   top: 4px;
   left: 5px;
+}
+
+.about__card {
+  width: 136px;
+  background: #5bd6e2;
+  box-shadow: -15px 26px 48px rgba(85, 240, 255, 0.17);
+  border-radius: 10px;
+  position: absolute;
+  padding: 30px 26px;
+  text-align: center;
+  top: 165px;
+  left: 0;
+}
+
+.about__card-title {
+  font-family: "Sora", sans-serif;
+  font-weight: 700;
+  font-size: 4.2rem;
+  line-height: 1;
+  color: #ffffff;
+}
+
+.about__card-desc {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.43;
+  color: #c6f4f9;
+  margin-top: 4px;
+}
+
+.about__card-decor {
+  position: absolute;
+  top: -39px;
+  right: -32px;
+}
+
+.about__img-wrap {
+  width: 494px;
+  position: relative;
+  margin-left: auto;
+}
+
+.about__img-wrap::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0 0;
+  background: linear-gradient(180deg, #fce0ef 0%, #fac3d1 100%);
+  border-radius: 16px;
+  height: 336px;
+  z-index: -1;
+}
+
+.about__img {
+  width: 450px;
+  display: block;
+  margin: 0 auto;
+}
+
+.about__media-decor {
+  position: absolute;
+  top: 157px;
+  right: -50px;
+  z-index: -1;
 }
