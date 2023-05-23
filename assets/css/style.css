@@ -599,6 +599,7 @@ button {
 
 .service__body {
   display: grid;
+  column-gap: 65px;
   margin-top: 70px;
   grid-template-columns: auto 1fr auto;
 }
@@ -641,4 +642,41 @@ button {
 .service-item__more::after {
   margin: 1px 0 0 5px;
   content: url(../img/ArrowUpRight.svg);
+}
+
+.service__media {
+  margin-top: 18px;
+  position: relative;
+}
+
+.service__media::after {
+  content: "";
+  position: absolute;
+  background: #79d5e0;
+  border-radius: 10px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 350px;
+}
+
+.service__img {
+  width: 100%;
+  height: 621px;
+  object-fit: cover;
+  z-index: 1;
+  position: relative;
+  display: block;
+}
+
+.service__cta-wrap {
+  margin-top: 45px;
+  display: flex;
+  justify-content: center;
+}
+
+.service__cta {
+  min-width: 214px;
+  color: #ff6b2e;
+  border-color: currentColor;
 }
