@@ -912,6 +912,10 @@ button {
   padding: 30px 28px;
 }
 
+.pricing-item--active {
+  box-shadow: 0px 20px 44px rgba(195, 108, 22, 0.06);
+}
+
 .pricing-item__type {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -964,4 +968,355 @@ button {
 .pricing-item__items::before {
   content: url(../img/check-only.svg);
   margin-right: 14px;
+}
+
+/* review */
+.review {
+  padding: 104px 0 52px;
+}
+
+.review__inner {
+  display: flex;
+  align-items: center;
+  column-gap: 44px;
+}
+
+.review__list {
+  display: flex;
+}
+
+.review__control {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  border: 1.5px solid #ffd1c4;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: var(--primary-color);
+}
+
+.review__control:hover {
+  color: #fff;
+  background: var(--primary-color);
+  cursor: pointer;
+  border-color: #ffd1c4;
+}
+
+.review__control:nth-of-type(2) {
+  margin-left: auto;
+}
+
+.review-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 115px;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.review-item__media {
+  width: 274px;
+  flex-shrink: 0;
+  border-radius: 137px;
+  position: relative;
+  margin-top: -52px;
+}
+
+.review-item__media::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0 0;
+  background: #ffda54;
+  border-radius: inherit;
+  height: 82%;
+}
+
+.review__content {
+  overflow: hidden;
+}
+
+.review-item__content {
+  margin-top: 28px;
+}
+
+.review-item__img {
+  width: 100%;
+  border-radius: inherit;
+  display: block;
+  z-index: 1;
+  position: relative;
+}
+
+.review-item__quote {
+  margin-top: 24px;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.56;
+  color: #000;
+  width: 553px;
+}
+
+.review-item__author {
+  margin-top: 34px;
+  font-family: "Sora", sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1;
+  color: #282828;
+  display: flex;
+  align-items: center;
+}
+
+.review-item__author::before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  border-radius: 1px;
+  background: #000;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.review__dots {
+  margin-top: 56px;
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+}
+
+.review__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  border: 1px solid #ff5b2e;
+}
+
+.review__dot:hover {
+  background-color: var(--primary-color);
+  cursor: pointer;
+}
+
+.review__dot-active {
+  width: 24px;
+  background: var(--primary-color);
+}
+
+/* blog */
+.blog {
+  padding: 78px 0;
+}
+
+.blog__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blog__info {
+  width: 350px;
+  margin-right: 74px;
+}
+
+.blog__desc {
+  margin-top: 0;
+}
+
+.blog__cta {
+  margin-top: 24px;
+  border: 1px solid rgb(255, 91, 46 /60%);
+  color: var(--primary-color);
+  max-width: 182px;
+}
+
+.blog__list {
+  margin-top: 54px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 48px;
+}
+
+.blog-item__img {
+  margin-top: 25px;
+  width: 100%;
+  height: 296px;
+  object-fit: cover;
+  display: block;
+  border-radius: 24px 0;
+}
+
+.blog-item__img-wrap {
+  padding: 24px 0 0 36px;
+  background: #90ccff;
+  border-radius: 24px;
+}
+
+.blog-item:nth-child(2) .blog-item__img-wrap {
+  background: #ff997e;
+}
+
+.blog-item:nth-child(3) .blog-item__img-wrap {
+  background: #5bd6e2;
+}
+
+.blog-item__time {
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.21;
+  color: #ffffff;
+}
+
+.blog-item__info {
+  margin-top: 28px;
+  text-align: center;
+}
+
+.blog-item__title {
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 1.55;
+  color: #000958;
+}
+
+.blog-item__desc {
+  margin-top: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.71;
+  color: #656689;
+}
+
+/* footer */
+.footer {
+  margin-top: 52px;
+  background: linear-gradient(to right, #fff6ed 42%, transparent 42%);
+}
+
+.footer__inner {
+  display: flex;
+}
+
+.footer__left {
+  padding: 114px 0 148px;
+  width: 42%;
+}
+
+.subscribe-form {
+  width: 268px;
+  height: 46px;
+  border: 1px solid rgba(255, 91, 46, 0.25);
+  border-radius: 23px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 0 68px 0;
+}
+
+.subscribe-form__input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  border-radius: inherit;
+  padding: 0 22px;
+  font-size: 1.4rem;
+}
+
+.subscribe-form__input:placeholder {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.17;
+  color: #656689;
+  opacity: 0.8;
+}
+
+.subscribe-form__submit {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  margin-right: -1px;
+  box-shadow: 0px 15px 28px -7px rgba(255, 91, 46, 0.3);
+}
+
+.subscribe-form__submit:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.footer__heading {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.11;
+  color: #000958;
+}
+
+.social__list {
+  margin-top: 16px;
+  display: flex;
+  column-gap: 16px;
+}
+
+.social-item {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-item:hover {
+  opacity: 0.9;
+}
+
+.footer__right {
+  flex: 1;
+  padding: 52px 0 48px 0;
+}
+
+.footer__row {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 58px 137px;
+  padding-left: 129px;
+}
+
+.footer__list {
+  margin-top: 14px;
+}
+
+.footer__link {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2;
+  color: #656689;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.footer__copyright {
+  margin: 52px 0 0 22px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.17;
+  color: #656689;
+  opacity: 0.5;
 }
